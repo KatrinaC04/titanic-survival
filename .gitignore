@@ -1,0 +1,10 @@
+# Do not upload Titanic datasets
+src/data/*
+!src/data/.gitkeep
+
+# Python
+.venv/
+venv/
+__pycache__/
+
+.DS_Store
