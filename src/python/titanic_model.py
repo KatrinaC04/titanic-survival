@@ -11,6 +11,11 @@ print("Dataset shape:", train.shape)
 
 print("Column names: ", train.columns.tolist())
 
+print("Summary statistics:", train[['Age', 'Fare', 'SibSp', 'Parch']].describe().round(2))
+print("Survival rate by sex:", train.groupby('Sex')['Survived'].mean().round(2))
+print("Survival rate by passenger class:", train.groupby('Pclass')['Survived'].mean().round(2))
+
+
 # Select features for the model
 features = ['Pclass', 'Sex', 'Age', "SibSp", 'Parch', 'Fare', 'Embarked']
 
