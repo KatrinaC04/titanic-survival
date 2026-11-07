@@ -1,0 +1,7 @@
+.git
+.venv
+src/data/*.csv
+outputs
+__pycache__
+*.pyc
+.DS_Store
